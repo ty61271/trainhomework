@@ -16,6 +16,8 @@ class TicketKotlin(val totalTicket: Int, val roundTrip: Int) {
     fun tatalMoney() {
         val singleTicket = totalTicket - roundTrip
         val totalMoney = (singleTicket * 1000) + (roundTrip * 2000 * 0.9)
-        print(totalMoney)
+        println("Total tickets: $totalTicket")
+        println("Round-trip: $roundTrip")
+        println("Total: $totalMoney")
     }
 }

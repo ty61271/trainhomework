@@ -12,6 +12,8 @@ public class Ticket {
     public void totalMoney() {
         int singleTickets = totalTickets - roundTrip;
         double totalMoney = ((singleTickets * 1000) + (roundTrip * 2000 * 0.9));
-        System.out.println(totalMoney);
+        System.out.println("Total tickets: "+totalTickets);
+        System.out.println("Round-trip: "+roundTrip);
+        System.out.println("Total: "+totalMoney);
     }
 }
